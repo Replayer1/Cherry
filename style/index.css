@@ -1,0 +1,591 @@
+.slogon {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.507)),
+    url(../media/content/salon.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.light-theme .slogon {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.089),
+      rgba(255, 255, 255, 0)
+    ),
+    url(../media/content/salon.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slogon h1 {
+  color: white;
+  font-size: 3rem;
+}
+
+.slogon p {
+  color: white;
+  font-size: 1rem;
+  font-family: "Noto Serif Display", serif;
+}
+
+.light-theme .slogon h1 {
+  color: rgb(0, 0, 0);
+  text-shadow: #000 2px 3px 5px;
+  font-size: 3rem;
+}
+
+.light-theme .slogon p {
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  text-shadow: #000 2px 3px 5px;
+  font-family: "Noto Serif Display", serif;
+}
+
+.slogon__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slogon__text h1 {
+  margin: 30px;
+}
+
+.services {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.services__item {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.services-image {
+  height: 100%;
+  width: 50%;
+}
+
+.services-hair {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.05), rgb(0, 0, 0)),
+    url(../media/content/hairCard.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.services-skin {
+  background: linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0, 0.05)),
+    url(../media/content/skinCard.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.services-fingers {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.05), rgb(0, 0, 0)),
+    url(../media/content/Nailscard.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.services-info {
+  height: 100%;
+  width: 50%;
+  color: white;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+.services-info * {
+  margin: 20px;
+  text-align: right;
+  max-width: 600px;
+  font-size: 1.3rem;
+  font-family: "Poiret One", cursive;
+}
+
+.services-info h1 {
+  font-family: "Noto Serif Display", serif;
+}
+
+.services-info a {
+  margin: 0;
+  padding: 0;
+}
+
+.services-info button {
+  background: rgba(0, 0, 0, 0);
+  border-radius: 20px;
+  border: 1px solid rgba(136, 81, 87, 1);
+  color: rgba(136, 81, 87, 1);
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.services-info-left {
+  height: 100%;
+  width: 50%;
+  color: white;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.services-info-left * {
+  margin: 20px;
+  text-align: left;
+  max-width: 600px;
+  font-size: 1.3rem;
+  font-family: "Poiret One", cursive;
+}
+
+.services-info-left h1 {
+  font-family: "Noto Serif Display", serif;
+}
+
+.services-info-left a {
+  margin: 0;
+  padding: 0;
+}
+
+.services-info-left button {
+  background: rgba(0, 0, 0, 0);
+  border-radius: 20px;
+  border: 1px solid rgba(136, 81, 87, 1);
+  color: rgba(136, 81, 87, 1);
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.services-info-left button:hover {
+  background: rgba(136, 81, 87, 1);
+  border-radius: 20px;
+  border: 1px solid rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.services-info button:hover {
+  background: rgba(136, 81, 87, 1);
+  border-radius: 20px;
+  border: 1px solid rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.light-theme .services-hair {
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.05),
+      rgba(255, 255, 255, 0.158)
+    ),
+    url(../media/content/hairCard.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.light-theme .services-skin {
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.05),
+      rgba(255, 255, 255, 0.158)
+    ),
+    url(../media/content/skinCard.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.light-theme .services-fingers {
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.05),
+      rgba(255, 255, 255, 0.158)
+    ),
+    url(../media/content/Nailscard.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.light-theme .services-info {
+  height: 100%;
+  width: 50%;
+  color: rgb(0, 0, 0);
+  text-shadow: #000 2px 3px 5px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+.light-theme .services-info * {
+  margin: 20px;
+  text-align: right;
+  max-width: 600px;
+  font-size: 1.3rem;
+  font-family: "Poiret One", cursive;
+}
+
+.light-theme .services-info h1 {
+  font-family: "Noto Serif Display", serif;
+}
+
+.light-theme .services-info a {
+  margin: 0;
+  padding: 0;
+}
+
+.light-theme .services-info button {
+  background: rgba(136, 81, 87, 1);
+  border-radius: 20px;
+  border: 1px solid rgba(136, 81, 87, 1);
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.light-theme .services-info-left {
+  height: 100%;
+  width: 50%;
+  color: rgb(0, 0, 0);
+  text-shadow: #000 2px 3px 5px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.light-theme .services-info-left * {
+  margin: 20px;
+  text-align: left;
+  max-width: 600px;
+  font-size: 1.3rem;
+  font-family: "Poiret One", cursive;
+}
+
+.light-theme .services-info-left h1 {
+  font-family: "Noto Serif Display", serif;
+}
+
+.light-theme .services-info-left a {
+  margin: 0;
+  padding: 0;
+}
+
+.light-theme .services-info-left button {
+  background: rgba(136, 81, 87, 1);
+  border-radius: 20px;
+  border: 1px solid rgba(136, 81, 87, 1);
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.light-theme .services-info-left button:hover {
+  background: rgba(136, 81, 87, 1);
+  border-radius: 20px;
+  border: 1px solid rgba(136, 81, 87, 1);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.light-theme .services-info button:hover {
+  background: rgba(136, 81, 87, 1);
+  border-radius: 20px;
+  border: 1px solid rgba(136, 81, 87, 1);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.staff {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+}
+.staff__item {
+  margin: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(255, 255, 255);
+  padding-top: 70px;
+  height: 300px;
+  width: 300px;
+  transition: 0.3s;
+}
+.staff__img-1 {
+  width: 100px;
+  height: 100px;
+  background: url(../media/content/nailsMaster.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150%;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.staff__img-2 {
+  width: 100px;
+  height: 100px;
+  background: url(../media/content/hairMaster.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.staff__img-3 {
+  width: 100px;
+  height: 100px;
+  background: url(../media/content/beautician.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.staff__name {
+  font-family: "Poiret One", cursive;
+  text-align: center;
+  font-size: 1.6rem;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.staff__position {
+  font-family: "Poiret One", cursive;
+  text-align: center;
+  font-size: 1.5rem;
+  padding-bottom: 70px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.staff__links {
+  height: 0px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+
+.staff__link {
+  font-size: 1.5rem;
+  padding: 20px;
+  color: white;
+  transition: 0.3s;
+}
+
+.staff__item:hover {
+  background: rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
+  border: rgb(255, 255, 255) 1px solid;
+  height: 400px;
+}
+
+.staff__item:hover .staff__img {
+  height: 200px;
+  width: 200px;
+}
+
+.staff__item:hover .staff__position {
+  height: 0px;
+  padding: 0;
+}
+
+.staff__item:hover .staff__links {
+  height: 30px;
+  overflow: visible;
+}
+
+.staff__link:hover .bi-facebook {
+  color: #3b5998;
+}
+.staff__link:hover .bi-twitter {
+  color: #00acee;
+}
+.staff__link:hover .bi-telegram {
+  color: #00bfff;
+}
+.staff__link:hover .bi-google {
+  color: #ea4335;
+}
+
+.light-theme .staff {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 255, 255);
+}
+.light-theme .staff__item {
+  margin: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(136, 81, 87, 1);
+  color: white;
+  padding-top: 70px;
+  height: 300px;
+  width: 300px;
+  transition: 0.3s;
+}
+.light-theme .staff__img-1 {
+  width: 100px;
+  height: 100px;
+  background: url(../media/content/nailsMaster.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150%;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.light-theme .staff__img-2 {
+  width: 100px;
+  height: 100px;
+  background: url(../media/content/hairMaster.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.light-theme .staff__img-3 {
+  width: 100px;
+  height: 100px;
+  background: url(../media/content/beautician.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.light-theme .staff__name {
+  font-family: "Poiret One", cursive;
+  text-align: center;
+  font-size: 1.6rem;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.light-theme .staff__position {
+  font-family: "Poiret One", cursive;
+  text-align: center;
+  font-size: 1.5rem;
+  padding-bottom: 70px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.light-theme .staff__links {
+  height: 0px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+
+.light-theme .staff__link {
+  font-size: 1.5rem;
+  padding: 20px;
+  color: white;
+  transition: 0.3s;
+}
+
+.light-theme .staff__item:hover {
+  background: rgba(136, 81, 87, 0.685);
+  color: rgb(255, 255, 255);
+  border: rgb(255, 255, 255) 1px solid;
+  height: 400px;
+}
+
+.light-theme .staff__item:hover .light-theme .staff__img {
+  height: 200px;
+  width: 200px;
+}
+
+.light-theme .staff__item:hover .light-theme .staff__position {
+  height: 0px;
+  padding: 0;
+}
+
+.light-theme .staff__item:hover .light-theme .staff__links {
+  height: 30px;
+  overflow: visible;
+}
+
+.light-theme .staff__link:hover .bi-facebook {
+  color: #3b5998;
+}
+.light-theme .staff__link:hover .bi-twitter {
+  color: #00acee;
+}
+.light-theme .staff__link:hover .bi-telegram {
+  color: #00bfff;
+}
+.light-theme .staff__link:hover .bi-google {
+  color: #ea4335;
+}
+
+
+
+.light-theme
+text-shadow: #000 2px 3px 5px;
+
+
+
+
+background: rgba(136, 81, 87, 1);
+border-radius: 20px;
+border: 1px solid rgba(136, 81, 87, 1);
+color: rgb(0, 0, 0);
+padding: 10px;
+cursor: pointer;
+transition: 0.3s;
