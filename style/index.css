@@ -574,18 +574,3 @@
   color: #ea4335;
 }
 
-
-
-.light-theme
-text-shadow: #000 2px 3px 5px;
-
-
-
-
-background: rgba(136, 81, 87, 1);
-border-radius: 20px;
-border: 1px solid rgba(136, 81, 87, 1);
-color: rgb(0, 0, 0);
-padding: 10px;
-cursor: pointer;
-transition: 0.3s;
