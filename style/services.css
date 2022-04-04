@@ -30,26 +30,34 @@
 }
 
 .light-theme #nails {
-  background: linear-gradient(rgba(255, 255, 255, 0.041), rgba(255, 255, 255, 0.137)),
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.041),
+      rgba(255, 255, 255, 0.137)
+    ),
     url(../media/content/Nailscard.jpeg);
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .light-theme #hair {
-  background: linear-gradient(rgba(255, 255, 255, 0.041), rgba(255, 255, 255, 0.137)),
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.041),
+      rgba(255, 255, 255, 0.137)
+    ),
     url(../media/content/hairCard.jpeg);
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .light-theme #skin {
-  background: linear-gradient(rgba(255, 255, 255, 0.041), rgba(255, 255, 255, 0.137)),
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.041),
+      rgba(255, 255, 255, 0.137)
+    ),
     url(../media/content/skinCard.jpeg);
   background-position: center;
   background-repeat: no-repeat;
 }
-
 
 .services-start h1 {
   color: white;
@@ -116,7 +124,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   color: rgb(0, 0, 0);
   text-shadow: #000 2px 3px 5px;
 }
-
 
 .serv__info {
   width: 30%;
@@ -373,11 +380,12 @@ textarea {
   justify-content: center;
 }
 
-
-
-
 .light-theme .services-hair {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.089), rgba(255, 255, 255, 0.05)),
+  background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.089),
+      rgba(255, 255, 255, 0.05)
+    ),
     url(../media/content/hairCard.jpeg);
   background-position: center;
   background-repeat: no-repeat;
@@ -385,7 +393,11 @@ textarea {
 }
 
 .light-theme .services-skin-left {
-  background: linear-gradient(270deg, rgba(255, 255, 255, 0.089), rgba(255, 255, 255, 0.05)),
+  background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0.089),
+      rgba(255, 255, 255, 0.05)
+    ),
     url(../media/content/hairCard.jpeg);
   background-position: center;
   background-repeat: no-repeat;
@@ -393,7 +405,11 @@ textarea {
 }
 
 .light-theme .services-skin {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.089), rgba(255, 255, 255, 0.05)),
+  background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.089),
+      rgba(255, 255, 255, 0.05)
+    ),
     url(../media/content/skinCard.jpeg);
   background-position: center;
   background-repeat: no-repeat;
@@ -401,7 +417,11 @@ textarea {
 }
 
 .light-theme .services-fingers {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.089), rgba(255, 255, 255, 0.05)),
+  background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.089),
+      rgba(255, 255, 255, 0.05)
+    ),
     url(../media/content/Nailscard.jpeg);
   background-position: center;
   background-repeat: no-repeat;
@@ -419,11 +439,6 @@ textarea {
   align-items: flex-end;
   justify-content: center;
 }
-
-
-
-
-
 
 .services-info * {
   margin: 20px;
@@ -538,7 +553,6 @@ textarea {
   color: white;
 }
 
-
 .light-theme .services-info-left button {
   background: rgba(136, 81, 87, 1);
   border-radius: 20px;
@@ -577,3 +591,179 @@ textarea {
   color: rgb(0, 0, 0);
 }
 
+@media screen and (max-height: 850px) {
+  .staff__name {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .services-start {
+    flex-direction: column;
+  }
+
+  .services-start p {
+    font-size: 1.2rem;
+  }
+
+  .serv__info {
+    height: 600px;
+  }
+
+  .staff__item {
+    padding-top: 150px;
+    transition: 0.3s;
+    border: 0;
+  }
+
+  .staff__img-2 {
+    width: 150px;
+    height: 150px;
+  }
+
+  .staff__img-1 {
+    width: 150px;
+    height: 150px;
+  }
+
+  .staff__img-3 {
+    width: 150px;
+    height: 150px;
+  }
+
+  .staff__link {
+    display: none;
+  }
+
+  .serv__buy {
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+  }
+
+  .serv__buy form {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .serv__buy form input[type="submit"] {
+    width: 90%;
+  }
+
+  .light-theme .services-start {
+    flex-direction: column;
+  }
+
+  .light-theme .services-start p {
+    font-size: 1.2rem;
+    color: white;
+  }
+
+  .light-theme .staff__item {
+    padding-top: 150px;
+    transition: 0.3s;
+    border: 0;
+  }
+
+  .light-theme .staff__img-2 {
+    width: 150px;
+    height: 150px;
+  }
+
+  .light-theme .staff__name {
+    color: white;
+  }
+
+  .light-theme .staff__link {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .serv__info {
+    display: none;
+  }
+
+  .services {
+    height: 220vh;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .services-image {
+    display: none;
+  }
+
+  .services-info {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+  }
+
+  .services-info-left {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+  }
+
+  .services-info p {
+    text-align: center;
+  }
+
+  .services-info-left p {
+    text-align: center;
+  }
+
+  .light-theme .serv__info {
+    display: none;
+  }
+
+  .light-theme .services {
+    height: 220vh;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .light-theme .services-image {
+    display: none;
+  }
+
+  .light-theme .services-info {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+  }
+
+  .light-theme .services-info-left {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+  }
+
+  .light-theme .services-info p {
+    text-align: center;
+  }
+
+  .light-theme .services-info-left p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .services-start {
+    padding-top: 100px;
+  }
+
+  .serv__buy form textarea {
+    width: 100%;
+    height: 300px;
+    margin: 0;
+  }
+}

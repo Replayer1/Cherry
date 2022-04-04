@@ -9,7 +9,6 @@
   background: #000;
 }
 
-
 .light-theme .profile__links {
   display: flex;
   min-height: 100vh;
@@ -53,13 +52,13 @@
   font-size: 3rem;
 }
 
-.profile-info-buttons *{
-    margin-left: 0;
-  }
+.profile-info-buttons * {
+  margin-left: 0;
+}
 
-.profile-info-buttons{
-    margin-left: 0;
-  }
+.profile-info-buttons {
+  margin-left: 0;
+}
 
 .profile-info button {
   background: rgba(0, 0, 0, 0);
@@ -73,38 +72,36 @@
 }
 
 .profile-info button:hover {
-    background: rgba(136, 81, 87, 1);
-    border-radius: 20px;
-    border: 1px solid rgba(136, 81, 87, 1);
-    color: rgb(255, 255, 255);
-    padding: 15px;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 1rem;
-  }
+  background: rgba(136, 81, 87, 1);
+  border-radius: 20px;
+  border: 1px solid rgba(136, 81, 87, 1);
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem;
+}
 
-  .light-theme .profile-info button {
-    background: rgba(136, 81, 87, 1);
-    border-radius: 20px;
-    border: 1px solid rgba(136, 81, 87, 1);
-    color: rgb(0, 0, 0);
-    padding: 10px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  .light-theme .profile-info button:hover {
-      background: rgba(136, 81, 87, 1);
-      border-radius: 20px;
-      border: 1px solid rgba(136, 81, 87, 1);
-      color: rgb(255, 255, 255);
-      padding: 15px;
-      cursor: pointer;
-      transition: 0.3s;
-      font-size: 1rem;
-    }
-  
+.light-theme .profile-info button {
+  background: rgba(136, 81, 87, 1);
+  border-radius: 20px;
+  border: 1px solid rgba(136, 81, 87, 1);
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
+.light-theme .profile-info button:hover {
+  background: rgba(136, 81, 87, 1);
+  border-radius: 20px;
+  border: 1px solid rgba(136, 81, 87, 1);
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem;
+}
 
 .profile__record {
   display: flex;
@@ -119,13 +116,12 @@
 }
 
 .profile__record-item {
-    border-bottom: 1px solid white;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 70%;
+  border-bottom: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
 }
-
 
 .light-theme .profile__record {
   display: flex;
@@ -141,64 +137,173 @@
 }
 
 .light-theme .profile__record-item {
-  
+  border-bottom: 1px solid rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+}
+
+.record-img {
+  width: 190px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+
+.record-img img {
+  height: 190px;
+}
+.record-info {
+  margin: 30px;
+  font-size: 1.5rem;
+}
+.record-info p {
+  font-size: 1.5rem;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.recrod-info-buttons button {
+  background: rgba(0, 0, 0, 0);
+  border-radius: 20px;
+  border: 1px solid rgba(136, 81, 87, 1);
+  color: rgba(136, 81, 87, 1);
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+.recrod-info-buttons button:hover {
+  background: rgba(136, 81, 87, 1);
+  border-radius: 20px;
+  border: 1px solid rgba(136, 81, 87, 1);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+.recrod-info-buttons button:last-child:hover {
+  background: rgb(223, 88, 103);
+  border-radius: 20px;
+  border: 1px solid rgba(136, 81, 87, 1);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 1070px) {
+  .profile__links {
+    padding-top: 150px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .light-theme .profile__links {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profile-info {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profile-info-buttons * {
+    margin: 10;
+    margin-left: 10px;
+  }
+
+  .profile-info-buttons {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profile-img img {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .profile__record {
+    display: flex;
+    min-height: 100vh;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Poiret One", cursive;
+    background: #000;
+  }
+
+  .profile__record-item {
+    border-bottom: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+  }
+
+  .light-theme .profile__record {
+    display: flex;
+    min-height: 100vh;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    text-shadow: #000 2px 3px 5px;
+    font-family: "Poiret One", cursive;
+    background: rgb(255, 255, 255);
+  }
+
+  .light-theme .profile__record-item {
     border-bottom: 1px solid rgb(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 70%;
-}
+  }
 
-.record-img {
-    width: 190px;
-    border-radius: 50%;
-    overflow: hidden;
+  .record-img {
+    width: 120px;
+  }
+
+  .record-img img {
+    height: 120px;
+  }
+  .record-info {
+    margin: 30px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .recrod-info-buttons {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 30px;
-}
+  }
 
-.record-img img{
-    height: 190px;
-}
-.record-info {
-    margin: 30px;
-    font-size: 1.5rem;
-}
-.record-info p{
-    font-size: 1.5rem;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-.recrod-info-buttons button{
-    background: rgba(0, 0, 0, 0);
-    border-radius: 20px;
-    border: 1px solid rgba(136, 81, 87, 1);
-    color: rgba(136, 81, 87, 1);
-    padding: 10px;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 1rem;
-}
-.recrod-info-buttons button:hover{
-    background: rgba(136, 81, 87, 1);
-    border-radius: 20px;
-    border: 1px solid rgba(136, 81, 87, 1);
-    color: rgb(255, 255, 255);
-    padding: 10px;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 1rem;
-}
-.recrod-info-buttons button:last-child:hover{
-    background: rgb(223, 88, 103);
-    border-radius: 20px;
-    border: 1px solid rgba(136, 81, 87, 1);
-    color: rgb(255, 255, 255);
-    padding: 10px;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 1rem;
+  .recrod-info-buttons *{
+    margin: 10px;
+  }
 }
